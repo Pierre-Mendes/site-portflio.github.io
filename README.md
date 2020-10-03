@@ -12,6 +12,6 @@ O controle de manutenção das tarefas desse projeto será feito pelo GitHub
 
 :up: atualização
 
-:beatle: correção de bug
+:beeatle: correção de bug
 
 :checkered_flag: release
