@@ -9,7 +9,6 @@
 }
 
 .hamburguer{
-    /*background-color: rgb(238, 10, 116);*/
     width: 2rem;
     height: 2rem;
     position: fixed;
@@ -22,11 +21,59 @@
     cursor: pointer;
 }
 
+.show-menu .hamburguer{
+    right: 16rem;
+}
+
 .line{
     width: 100%;
     height: .1rem;
     background-color: #ffffff;
     box-shadow: 0.1rem 0.1rem 1px #000;
+    transition: transform 1s;
+}
+
+.show-menu #line1{
+    transform: rotate(45deg) translate(.3rem, .45rem);
+}
+
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.show-menu #line3{
+    transform: rotate(-45deg) translate(.3rem, -.45rem);
+}
+
+.hamburguer span{
+    font-family: cursive;
+    color: mintcream;
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(202, 83, 166);
+    background: -webkit-linear-gradient(to right, #493240, #FF0099);
+    background: linear-gradient(to top, #493240, #FF0099);
+    opacity: 0;
+}
+
+.hamburguer span::before{
+    content: "";
+    position: absolute;
+    border-right: .5rem solid rgb(202, 83, 166);
+    border-top: .5rem solid transparent;
+    border-left: .5rem solid transparent;
+    border-bottom: .5rem solid transparent;
+    left: -1rem;
+}
+
+.show-menu .hamburguer:hover span{
+    opacity: 1;
 }
 
 header {
@@ -70,7 +117,7 @@ header {
 .banner h1 {
     color: #ffffff;
     font-size: 3.5rem;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: cursive;
     font-weight: 200;
     text-shadow: .2rem .4rem 2px rgba(0, 0, 0, .4);
     line-height: 3.5rem;
@@ -80,7 +127,7 @@ header {
 }
 
 .banner p {
-    font-family: serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ffffff;
     font-size: 2rem;
     text-shadow: .2rem .2rem rgba(0, 0, 0, .4);
@@ -125,14 +172,64 @@ header {
 }
 
 .sidebar{
+    background: -webkit-linear-gradient(to right, #911664, #e968a4);
+    background: linear-gradient(to top, #493240, #c7c0c4);
     width: 20rem;
     height: 100vh;
-    background-color: #ffffff;
+    background-color: dimgray;
     position: fixed;
     top: 0;
+    right: -20rem;
+    transition: all 1s;
+}
+
+.show-menu .sidebar{
     right: 0;
 }
+
 .menu{
     position: absolute;
-    
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50% );
+}
+
+.menu-item{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.menu-link{
+    font-family: cursive;
+    font-size: 2rem;
+    color: whitesmoke;
+    transition: color 0.5s;
+}
+
+.menu-link:hover{
+    color: violet;
+}
+
+.social-midia{
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-midia i{
+    color: white;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-midia i:hover{
+    color: yellowgreen;
+    opacity: 0.9;
+    transition: color 0.5s;
 }
