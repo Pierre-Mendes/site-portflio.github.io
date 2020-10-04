@@ -1,17 +1,14 @@
-# site-portif-lio
+# portifolio
 
-Site desenvolvido com intuito de ser um currículo virtual para portfólio
+Portifolio do desenvolvedor
 
 ## Tarefas
 
-O controle de manutenção das tarefas desse projeto será feito pelo GitHub
+O controle das tarefas desse projeto será realizado no GitHub
 
-## Icones 
+## Ícones
 
-:package: novas Funcionalidades 
-
-:up: atualização
-
-:beetle: correção de bug
-
-:checkered_flag: release
+- :package: nova funcionalidade
+- :up: atualização
+- :beetle: correção de bug
+- :checkered_flag: release
